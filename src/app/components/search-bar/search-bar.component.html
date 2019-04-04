@@ -1,0 +1,4 @@
+<mat-form-field>
+    <input matInput [(ngModel)]="tagSerchQuery" placeholder='Enter tag...' (keydown)="onKeydown($event)">
+</mat-form-field>
+<button mat-button color="primary" (click)="search()">Search</button>

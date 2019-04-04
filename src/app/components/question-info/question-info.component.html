@@ -1,0 +1,11 @@
+<div *ngIf="selectedQuestion">
+    <mat-form-field>
+        <label>View count: <input type="text" disabled matInput value={{selectedQuestion.viewCount}}></label>
+    </mat-form-field> 
+    <br/>
+    <mat-form-field>
+        <label>Score: <input type="text" disabled matInput value={{selectedQuestion.score}}></label>
+    </mat-form-field>    
+    <br/>
+    <label>Link: <a mat-button href="{{selectedQuestion.link}}">{{selectedQuestion.link}}</a></label>
+</div>
